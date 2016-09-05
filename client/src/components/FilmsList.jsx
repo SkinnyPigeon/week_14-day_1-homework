@@ -15,8 +15,8 @@ var FilmsList = React.createClass({
   render: function() {
     var filmNodes = this.props.data.map( function( film ) {
       return(
-        <Films key={ film.id }>
-          { film.name }
+        <Films key={ film.id } >
+          <a href={ film.URL } > { film.name } </a>
         </Films>
       )
     })
