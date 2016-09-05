@@ -19755,7 +19755,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(1);
-	var FilmsList = __webpack_require__(160);
+	var FilmsList = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./FilmsList\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	var sampleData = [{ id: 1, name: "The Man Who Fell To Earth" }, { id: 2, name: "Don't Breathe" }, { id: 3, name: "Ben-Hur" }, { id: 4, name: "Captain Fantastic" }];
 	
 	var FilmsBox = React.createClass({
@@ -19786,12 +19786,6 @@
 	});
 	
 	module.exports = FilmsBox;
-
-/***/ },
-/* 160 */
-/***/ function(module, exports) {
-
-	"use strict";
 
 /***/ }
 /******/ ]);
