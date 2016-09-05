@@ -9,9 +9,9 @@ var Films = React.createClass({
   render: function() {
 
     return(
-      <div className='comment'>
-        <h2 className='comment-author'>
-          {this.props.author}
+      <div className='films'>
+        <h2 className='film-name'>
+          {this.props.name}
         </h2>
         {this.props.children}
         <button type="button" onClick={ this.deleteComment }>Nowep</button>
@@ -20,4 +20,4 @@ var Films = React.createClass({
   }
 });
 
-module.exports = Comment;
+module.exports = Films;

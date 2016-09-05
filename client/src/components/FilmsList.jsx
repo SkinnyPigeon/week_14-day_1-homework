@@ -16,7 +16,7 @@ var FilmsList = React.createClass({
           <br></br>
         </Film>
       )
-    }.bind( this ))
+    }
 
     return(
       <div className='film-list'>
