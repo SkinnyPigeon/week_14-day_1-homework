@@ -48,13 +48,10 @@
 	
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
+	var FilmsBox = __webpack_require__(159);
 	
 	window.onload = function () {
-	  ReactDOM.render(React.createElement(
-	    'h1',
-	    null,
-	    ' App Started '
-	  ), document.getElementById('app'));
+	  ReactDOM.render(React.createElement(FilmsBox, null), document.getElementById('app'));
 	};
 
 /***/ },
@@ -19750,6 +19747,51 @@
 	
 	module.exports = __webpack_require__(3);
 
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var FilmsList = __webpack_require__(160);
+	var sampleData = [{ id: 1, name: "The Man Who Fell To Earth" }, { id: 2, name: "Don't Breathe" }, { id: 3, name: "Ben-Hur" }, { id: 4, name: "Captain Fantastic" }];
+	
+	var FilmsBox = React.createClass({
+	  displayName: 'FilmsBox',
+	
+	
+	  getInitialState: function getInitialState() {
+	    return { data: sampleData };
+	  },
+	
+	  handleSeeFilmsTimes: function handleSeeFilmsTimes() {
+	    console.log("You have bought 3206 tickets to Ben-Hur");
+	  },
+	
+	  render: function render() {
+	
+	    return React.createElement(
+	      'div',
+	      { className: 'film-box' },
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Films'
+	      ),
+	      React.createElement(FilmsList, { data: this.state.data, handleSeeFilmsTimes: this.handleSeeFilmsTimes })
+	    );
+	  }
+	});
+	
+	module.exports = FilmsBox;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	"use strict";
 
 /***/ }
 /******/ ]);
