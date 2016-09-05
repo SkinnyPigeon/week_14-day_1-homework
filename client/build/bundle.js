@@ -19805,6 +19805,10 @@
 	  displayName: 'FilmsList',
 	
 	
+	  handleSeeFilmsTimes: function handleSeeFilmsTimes() {
+	    this.props.handleSeeFilmsTimes();
+	  },
+	
 	  render: function render() {
 	    var filmNodes = this.props.data.map(function (film) {
 	      return React.createElement(
@@ -19817,7 +19821,12 @@
 	    return React.createElement(
 	      'div',
 	      { className: 'film-list' },
-	      filmNodes
+	      filmNodes,
+	      React.createElement(
+	        'button',
+	        { type: 'button', onClick: this.handleSeeFilmsTimes },
+	        'See Film Times'
+	      )
 	    );
 	  }
 	});

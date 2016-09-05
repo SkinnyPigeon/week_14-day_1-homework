@@ -8,6 +8,10 @@ propTypes: {
 
 var FilmsList = React.createClass({
 
+  handleSeeFilmsTimes: function() {
+    this.props.handleSeeFilmsTimes();
+  },
+
   render: function() {
     var filmNodes = this.props.data.map( function( film ) {
       return(
@@ -20,6 +24,7 @@ var FilmsList = React.createClass({
     return(
       <div className='film-list'>
         { filmNodes }
+        <button type="button" onClick={ this.handleSeeFilmsTimes }>See Film Times</button>
       </div>
     )
   }
