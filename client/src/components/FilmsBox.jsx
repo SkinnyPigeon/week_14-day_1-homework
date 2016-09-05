@@ -13,12 +13,16 @@ var FilmsBox = React.createClass({
     return{ data: sampleData }
   },
 
+  handleSeeFilmsTimes: function() {
+    console.log( "You have bought 3206 tickets to Ben-Hur" );
+  },
+
   render: function() {
 
     return(
       <div className='film-box'>
         <h1>Films</h1>
-        <FilmsList data={ this.state.data } />
+        <FilmsList data={ this.state.data } handleSeeFilmsTimes={ this.handleSeeFilmsTimes }/>
       </div>
     )
   }
