@@ -14,7 +14,6 @@ var Films = React.createClass({
           {this.props.name}
         </h2>
         {this.props.children}
-        <button type="button" onClick={ this.deleteComment }>Nowep</button>
       </div>
     )
   }

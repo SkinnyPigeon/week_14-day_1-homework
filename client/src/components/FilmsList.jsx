@@ -11,12 +11,11 @@ var FilmsList = React.createClass({
   render: function() {
     var filmNodes = this.props.data.map( function( film ) {
       return(
-        <Film key={ film.id } }>
+        <Films key={ film.id }>
           { film.name }
-          <br></br>
-        </Film>
+        </Films>
       )
-    }
+    })
 
     return(
       <div className='film-list'>
