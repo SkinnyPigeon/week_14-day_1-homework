@@ -19774,7 +19774,7 @@
 	
 	    return React.createElement(
 	      'div',
-	      { className: 'film-box' },
+	      { className: 'film-box', 'class': 'films' },
 	      React.createElement(
 	        'h1',
 	        null,
@@ -19826,12 +19826,12 @@
 	
 	    return React.createElement(
 	      'div',
-	      { className: 'film-list' },
+	      { className: 'film-list', 'class': 'films' },
 	      filmNodes,
 	      React.createElement(
 	        'button',
 	        { type: 'button', onClick: this.handleSeeFilmsTimes },
-	        'See Film Times'
+	        'Get Showtimes >>'
 	      )
 	    );
 	  }

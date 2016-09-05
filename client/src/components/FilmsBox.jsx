@@ -20,7 +20,7 @@ var FilmsBox = React.createClass({
   render: function() {
 
     return(
-      <div className='film-box'>
+      <div className='film-box' class="films">
         <h1>Films</h1>
         <FilmsList data={ this.state.data } handleSeeFilmsTimes={ this.handleSeeFilmsTimes }/>
       </div>

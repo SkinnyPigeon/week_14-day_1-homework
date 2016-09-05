@@ -22,9 +22,9 @@ var FilmsList = React.createClass({
     })
 
     return(
-      <div className='film-list'>
+      <div className='film-list' class="films">
         { filmNodes }
-        <button type="button" onClick={ this.handleSeeFilmsTimes }>See Film Times</button>
+        <button type="button" onClick={ this.handleSeeFilmsTimes }>Get Showtimes >></button>
       </div>
     )
   }
